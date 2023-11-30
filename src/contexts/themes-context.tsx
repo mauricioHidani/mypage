@@ -1,7 +1,7 @@
 import React, { ReactNode, createContext, useState } from "react";
 import { ThemeProvider } from "styled-components";
-import Themes from "../themes/ThemesStyle.tsx";
-import GlobalStyle from "../themes/GlobalStyle.tsx";
+import Themes from "../themes/themes-style.tsx";
+import GlobalStyle from "../themes/global-style.tsx";
 
 type Props = { children: ReactNode; };
 
