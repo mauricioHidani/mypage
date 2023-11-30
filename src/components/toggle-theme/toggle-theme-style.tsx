@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Themes from "../../themes/ThemesStyle.tsx";
+import Themes from "../../themes/themes-style.tsx";
 
 export const Button = styled.button`
   position: relative;

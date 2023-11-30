@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Button, TargetToggle, TargetIcon } from "./toggle-theme-style.tsx";
-import { ThemeContext } from "../../contexts/ThemesContext.tsx";
+import { ThemeContext } from "../../contexts/themes-context.tsx";
 import { MdDarkMode, MdOutlineLightMode } from "react-icons/md";
 
 const ToggleTheme = () => {
