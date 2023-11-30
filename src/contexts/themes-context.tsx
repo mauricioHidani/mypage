@@ -5,7 +5,11 @@ import GlobalStyle from "../themes/global-style.tsx";
 
 type Props = { children: ReactNode; };
 
-const ThemeContext = createContext({});
+const ThemeContext = createContext({ 
+  theme: Themes.dark.name, 
+  onToggleTheme: () => {} 
+});
+
 const StorageName = "theme-storage";
 
 const MyThemeProvider = ({ children }: Props) => {
