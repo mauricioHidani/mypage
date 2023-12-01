@@ -1,3 +1,6 @@
+# PORTFOLIO PROJECT [status: development]
+November 30, 2023 - SÃo Paulo, Brazil
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
