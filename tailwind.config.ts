@@ -9,12 +9,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        '1th-color': '#121619',
-        '2th-color': '#E2E2E2',
-        "3th-color": "#3B82E1",
-        "4th-color": "#93C5E7",
-        "5th-color": "#6B7280",
-        'std-text': '#F2F2F2',
+        "color-1th": "#111827", 
+        "color-2th": "#D7D7DB", 
+        "color-3th": "#1F2937", 
+        "color-normal": "#3D4856", 
+        "color-hover": "#84CC16", 
+        "color-active": "#A3E635", 
       }
     },
   },
