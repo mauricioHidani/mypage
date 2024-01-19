@@ -1,10 +1,6 @@
 import { data as footer } from "@/data/footerData";
 
-export default function Footer(
-    {
-    }: {
-    }
-) {
+export default function Footer({}: {}) {
     return(
         <div
             className="
@@ -16,7 +12,7 @@ export default function Footer(
                 text-center 
                 bg-color-1th 
                 text-sm 
-                text-color-normal  
+                text-color-4th   
             "
         >
             <div
@@ -33,22 +29,20 @@ export default function Footer(
             <div
                 className="
                     flex 
-                    gap-2
-                    text-green-400  
-                "
-            >
-                <span>{ footer.version }</span>
-                <span>version</span>
-            </div>
-            <div
-                className="
-                    flex 
                     gap-1 
-                    text-green-900 
                 "
             >
                 <span>created by</span>
                 <span>{ footer.author }</span>
+            </div>
+            <div
+                className="
+                    flex 
+                    gap-2
+                "
+            >
+                <span>{ footer.version }</span>
+                <span>version</span>
             </div>
         </div>
     );
