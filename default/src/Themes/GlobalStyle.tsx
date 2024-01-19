@@ -26,6 +26,10 @@ const GlobalStyle = createGlobalStyle`
 
     &:hover { color: ${props => props.theme.colors.linkHover}; }
   }
+
+  ul {
+    list-style: none;
+  }
 `;
 
 export default GlobalStyle;

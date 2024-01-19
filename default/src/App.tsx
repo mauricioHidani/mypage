@@ -1,8 +1,10 @@
 import React from 'react';
-import Presentation from './Components/Presentation/Presentation';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyle from './Themes/GlobalStyle';
 import Theme from './Themes/Theme';
+
+import Presentation from './Components/Presentation/Presentation';
+import MainProject from './Components/MainProject/MainProject';
 
 function App() {
   return (
@@ -10,6 +12,7 @@ function App() {
       <GlobalStyle />
       <section>
         <Presentation />
+        <MainProject />
       </section>
     </ThemeProvider>
   );

@@ -1,4 +1,4 @@
-import { FaJava, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaJava, FaLinkedin } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { SiSpring, SiGmail } from "react-icons/si";
 import { IoLogoWhatsapp } from "react-icons/io";
@@ -13,27 +13,33 @@ const PersonData = {
             "Paulista. Meu entusiasmo pela programação me levou a estudar de " + 
             "forma autodidata, e estou ansioso para aplicar meus conhecimentos " + 
             "em projetos desafiadores.",
+  portfolio: {
+    title: "github",
+    description: "Github",
+    url: "https://github.com/mauricioHidani",
+    iconSVG: <FaGithub className="icon" />,
+  },
   stacks: [
     {
       id: "13e8077d-9fe4-40d4-b7b6-d8b82f2aeef4",
       title: "java",
       description: "Java",
       url: "https://www.java.com/pt-BR/",
-      iconSVG: <FaJava className={"icon"} />,
+      iconSVG: <FaJava className="icon" />,
     },
     {
       id: "7bbeac45-f3bd-4093-a867-54f74bc39072",
       title: "spring boot",
       description: "Spring",
       url: "https://spring.io/projects/spring-boot",
-      iconSVG: <SiSpring className={"icon"} />,
+      iconSVG: <SiSpring className="icon" />,
     },
     {
       id: "ed426862-3652-45f3-af78-ddb5a8ba7f1d",
       title: "postgres",
       description: "Postgres",
       url: "https://www.postgresql.org/",
-      iconSVG: <BiLogoPostgresql className={"icon"} />,
+      iconSVG: <BiLogoPostgresql className="icon" />,
     },
     {
       id: "6000c15d-d0a5-437a-91c9-e827d4ed7445",
