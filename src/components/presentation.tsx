@@ -1,18 +1,14 @@
-import Link from "next/link";
 import { JSXElementConstructor, ReactElement } from "react";
 import { data as presentation } from '@/data/presentationData';
-import DiscountNavbarFullDark from "./discountNavbarFullDark";
-import CircularLink from "./circularLink";
 
-import { CgDetailsMore } from "react-icons/cg";
-import { FaCode } from "react-icons/fa";
+import DiscountNavbarFullDark from "./discountNavbarFullDark";
 import LargeStackList from "./largeStackList";
+import LargeContactList from "./largeContactList";
+import CircularLinkList from "./circularLinkList"
+import SimpleTitle from "./simpleTitle";
 import SimpleLink from "./simpleLink";
 import SuperTitleBy2 from "./superTitleBy2";
-import SimpleTitle from "./simpleTitle";
 import JustifiedText from "./justifiedText";
-import LargeContactList from "./largeContactList";
-import CircularLinkList from "./circularLinkList";
 
 export default function Presentation(
     { 
