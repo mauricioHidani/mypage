@@ -13,7 +13,10 @@ import JustifiedText from "./justifiedText";
 import LargeContactList from "./largeContactList";
 
 export default function Presentation(
-    { person } : {
+    { 
+        person 
+    } : 
+    {
         person: {
             fullname: string, 
             snapshot: string, 
@@ -43,7 +46,7 @@ export default function Presentation(
             <SimpleTitle italic={true}>{ person.fullname }</SimpleTitle>
             <JustifiedText>{ person.snapshot }</JustifiedText>
             <LargeContactList contacts={person.contacts} />
-            
+
             <div 
                 className="
                     flex 
