@@ -5,6 +5,7 @@ import CircularLink from "./circularLink";
 
 import { CgDetailsMore } from "react-icons/cg";
 import { FaCode } from "react-icons/fa";
+import LargeStackList from "./largeStackList";
 
 export default function Presentation(
     { person } : {
@@ -31,44 +32,7 @@ export default function Presentation(
 ) {
     return(
         <DiscountNavbarFullDark>
-            <ul 
-                className="
-                    flex 
-                    gap-3 
-                    y-[64px] 
-                "
-            >
-                { person.stacks.map(
-                    stack => <li 
-                        key={stack.id} 
-                        className="
-                            flex 
-                            items-center 
-                            justify-center 
-                        "
-                    >
-                        <Link 
-                            href={stack.path}
-                            target="_blank" 
-                            title={ stack.title }
-                            className="
-                                flex 
-                                flex-col 
-                                md:gap-[0.022rem] 
-                                items-center 
-                                justify-center 
-                                text-xs md:text-sm 
-                                text-color-normal 
-                                hover:text-color-hover 
-                                active:text-color-active
-                            "
-                        >
-                            <span>{ stack.icon }</span>
-                            <span className="hidden md:block">{ stack.title }</span>
-                        </Link>
-                    </li>
-                ) }
-            </ul>
+            <LargeStackList stacks={ person.stacks } />
             <div className="">
                 <Link 
                     href={ person.github } 
