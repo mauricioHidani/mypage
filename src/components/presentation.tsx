@@ -9,6 +9,7 @@ import LargeStackList from "./largeStackList";
 import SimpleLink from "./simpleLink";
 import SuperTitleBy2 from "./superTitleBy2";
 import SimpleTitle from "./simpleTitle";
+import JustifiedText from "./justifiedText";
 
 export default function Presentation(
     { person } : {
@@ -39,15 +40,8 @@ export default function Presentation(
             <SimpleLink target="_blank" path={person.github} title="github">{person.github}</SimpleLink>
             <SuperTitleBy2 content="Desenvolvedor">{person.stack}</SuperTitleBy2>
             <SimpleTitle italic={true}>{person.fullname}</SimpleTitle>
+            <JustifiedText>{ person.snapshot }</JustifiedText>
 
-            <p
-                className="
-                    my-3
-                    text-justify 
-                "
-            >
-                { person.snapshot }
-            </p>
             <ul
                 className="
                     flex 
