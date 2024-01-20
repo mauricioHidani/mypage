@@ -6,6 +6,7 @@ import CircularLink from "./circularLink";
 import { CgDetailsMore } from "react-icons/cg";
 import { FaCode } from "react-icons/fa";
 import LargeStackList from "./largeStackList";
+import SimpleLink from "./simpleLink";
 
 export default function Presentation(
     { person } : {
@@ -32,22 +33,8 @@ export default function Presentation(
 ) {
     return(
         <DiscountNavbarFullDark>
-            <LargeStackList stacks={ person.stacks } />
-            <div className="">
-                <Link 
-                    href={ person.github } 
-                    target="_blank" 
-                    title="gihub" 
-                    className="
-                        text-sm 
-                        text-color-4th 
-                        hover:text-color-hover 
-                        active:text-color-active 
-                    "
-                >
-                    <span>{ person.github }</span>
-                </Link>
-            </div>
+            <LargeStackList stacks={person.stacks} />
+            <SimpleLink target="_blank" path={person.github} title="github">{person.github}</SimpleLink>
             <h1
                 className="
                     flex 
