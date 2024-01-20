@@ -11,6 +11,8 @@ export default function DiscountNavbarFullDark(
     return(
         <div
             className="
+                flex 
+                flex-col 
                 w-full 
                 md:h-[calc(100vh-3.5rem)] 
                 p-5
