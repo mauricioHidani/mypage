@@ -10,6 +10,7 @@ import SimpleLink from "./simpleLink";
 import SuperTitleBy2 from "./superTitleBy2";
 import SimpleTitle from "./simpleTitle";
 import JustifiedText from "./justifiedText";
+import LargeContactList from "./largeContactList";
 
 export default function Presentation(
     { person } : {
@@ -41,48 +42,8 @@ export default function Presentation(
             <SuperTitleBy2 content="Desenvolvedor">{ person.stack }</SuperTitleBy2>
             <SimpleTitle italic={true}>{ person.fullname }</SimpleTitle>
             <JustifiedText>{ person.snapshot }</JustifiedText>
-
-            <ul
-                className="
-                    flex 
-                    flex-col md:flex-row 
-                    gap-2 
-                    my-3
-                "
-            >
-                { person.contacts.map(contact => 
-                    <li 
-                        key={ contact.id }
-                        className=" 
-                            flex 
-                            items-center 
-                            md:justify-center 
-                            h-[32px] 
-                            w-[100px] md:w-auto 
-                        "
-                    >
-                        <Link 
-                            href={ contact.path }
-                            title={ contact.title }
-                            className="
-                                flex 
-                                flex-row 
-                                items-center 
-                                justify-start md:justify-center 
-                                gap-2 
-                                pl-2
-                                text-color-normal 
-                                hover:text-color-hover 
-                                active:text-color-active
-                                text-xl md:text-sm
-                            "
-                        >
-                            <span>{ contact.icon }</span>
-                            <span>{ contact.title }</span>
-                        </Link>
-                    </li>
-                ) }
-            </ul>
+            <LargeContactList contacts={person.contacts} />
+            
             <div 
                 className="
                     flex 
