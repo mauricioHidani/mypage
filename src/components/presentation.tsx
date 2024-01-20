@@ -8,6 +8,7 @@ import { FaCode } from "react-icons/fa";
 import LargeStackList from "./largeStackList";
 import SimpleLink from "./simpleLink";
 import SuperTitleBy2 from "./superTitleBy2";
+import SimpleTitle from "./simpleTitle";
 
 export default function Presentation(
     { person } : {
@@ -37,17 +38,8 @@ export default function Presentation(
             <LargeStackList stacks={person.stacks} />
             <SimpleLink target="_blank" path={person.github} title="github">{person.github}</SimpleLink>
             <SuperTitleBy2 firstPart="Desenvolvedor" secondPart={person.stack} />
-            <h3 
-                className="
-                    text-lg 
-                    uppercase 
-                    italic 
-                    tracking-wider 
-                    text-gray-500 
-                "
-            >
-                { person.fullname }
-            </h3>
+            <SimpleTitle italic={true}>{person.fullname}</SimpleTitle>
+            
             <p
                 className="
                     my-3
