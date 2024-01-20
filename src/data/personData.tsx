@@ -34,5 +34,5 @@ export const data = {
             icon: (<BiLogoGmail size={24} className="" />) 
         }
     ],
-    path: ""
+    path: "/about"
 };
