@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { JSXElementConstructor, ReactElement } from "react";
+import { data as presentation } from '@/data/presentationData';
 import DiscountNavbarFullDark from "./discountNavbarFullDark";
 import CircularLink from "./circularLink";
 
@@ -11,6 +12,7 @@ import SuperTitleBy2 from "./superTitleBy2";
 import SimpleTitle from "./simpleTitle";
 import JustifiedText from "./justifiedText";
 import LargeContactList from "./largeContactList";
+import CircularLinkList from "./circularLinkList";
 
 export default function Presentation(
     { 
@@ -46,31 +48,7 @@ export default function Presentation(
             <SimpleTitle italic={true}>{ person.fullname }</SimpleTitle>
             <JustifiedText>{ person.snapshot }</JustifiedText>
             <LargeContactList contacts={person.contacts} />
-
-            <div 
-                className="
-                    flex 
-                    justify-end 
-                    mx-10 md:mx-28 
-                    gap-2
-                "
-            >
-                <CircularLink 
-                    path={ person.path } 
-                    title="mais" 
-                    target="_target" 
-                    size="12" 
-                >
-                    <span><CgDetailsMore size={ 24 } /></span>
-                </CircularLink>
-                <CircularLink 
-                    path="#main-project"
-                    title="Projeto Principal"
-                    size="12"
-                >
-                    <span><FaCode size={ 24 } /></span>
-                </CircularLink>
-            </div>
+            <CircularLinkList size="12" items={presentation.accessLinks} />
         </DiscountNavbarFullDark>
     );
 }
