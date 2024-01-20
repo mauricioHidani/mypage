@@ -7,6 +7,7 @@ import { CgDetailsMore } from "react-icons/cg";
 import { FaCode } from "react-icons/fa";
 import LargeStackList from "./largeStackList";
 import SimpleLink from "./simpleLink";
+import SuperTitleBy2 from "./superTitleBy2";
 
 export default function Presentation(
     { person } : {
@@ -35,20 +36,7 @@ export default function Presentation(
         <DiscountNavbarFullDark>
             <LargeStackList stacks={person.stacks} />
             <SimpleLink target="_blank" path={person.github} title="github">{person.github}</SimpleLink>
-            <h1
-                className="
-                    flex 
-                    flex-col md:flex-row 
-                    md:gap-6 
-                    text-2xl md:text-5xl 
-                    tracking-wide md:tracking-widest 
-                    uppercase 
-                    font-bold  
-                "
-            >
-                <span>Desenvolvedor</span>
-                <span>{ person.stack }</span>
-            </h1>
+            <SuperTitleBy2 firstPart="Desenvolvedor" secondPart={person.stack} />
             <h3 
                 className="
                     text-lg 
