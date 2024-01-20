@@ -1,12 +1,13 @@
+import { ReactNode } from 'react';
 
 export default function SuperTitleBy2(
     {
-        firstPart,
-        secondPart
+        content,
+        children
     }: 
     {
-        firstPart: string,
-        secondPart: string
+        content: string,
+        children: ReactNode
     }
 ) {
     const titleStyle = `
@@ -21,8 +22,8 @@ export default function SuperTitleBy2(
 
     return(
         <h1 className={titleStyle}>
-            <span>{firstPart}</span>
-            <span>{secondPart}</span>
+            <span>{content}</span>
+            <span>{children}</span>
         </h1>
     );
 }

@@ -37,9 +37,9 @@ export default function Presentation(
         <DiscountNavbarFullDark>
             <LargeStackList stacks={person.stacks} />
             <SimpleLink target="_blank" path={person.github} title="github">{person.github}</SimpleLink>
-            <SuperTitleBy2 firstPart="Desenvolvedor" secondPart={person.stack} />
+            <SuperTitleBy2 content="Desenvolvedor">{person.stack}</SuperTitleBy2>
             <SimpleTitle italic={true}>{person.fullname}</SimpleTitle>
-            
+
             <p
                 className="
                     my-3
