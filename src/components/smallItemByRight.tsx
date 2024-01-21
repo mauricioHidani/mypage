@@ -19,8 +19,8 @@ export default function SmallItemByRight(
                 items-center
                 justify-end
                 right-0
-                ${mobMarginX !== null ? "mx-["+mobMarginX+"]" : "mx-10"}
-                ${dekMarginX !== null ? "md:mx-["+dekMarginX+"]" : "md:mx-28"}
+                ${!mobMarginX ? "mx-["+mobMarginX+"]" : "mx-10"}
+                ${!dekMarginX ? "md:mx-["+dekMarginX+"]" : "md:mx-28"}
             `}
         >
             { children }
