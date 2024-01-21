@@ -35,6 +35,7 @@ export default function CircularLink(
                     bg-color-normal
                     hover:bg-color-hover 
                     active:bg-color-active 
+                    text-white
             `}
             >
                 { children }
