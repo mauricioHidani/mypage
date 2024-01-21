@@ -5,6 +5,7 @@ import CircularLink from "./circularLink";
 import LargeStackList from "./largeStackList";
 import SimpleLink from "./simpleLink";
 import Image from "next/image";
+import SmallItemByRight from "./smallItemByRight";
 
 export default function ProjectFull(
     {
@@ -60,11 +61,13 @@ export default function ProjectFull(
             <Image width={1024} height={768} style={{ width: '100%', height: 'auto' }} alt="Imagem do Projeto" src="/landscape.jpg" />
             <p className={simpleContentStyle}>{ children }</p>
             <LargeStackList stacks={stacks} />
-            <div className={simpleCircularLink}>
+            <SmallItemByRight
+                yMargin="2"
+            >
                 <CircularLink path="/" title="Projeto Principal" target="_blank" size="12">
                     <span><CgDetailsMore size={24} /></span>
                 </CircularLink>
-            </div>
+            </SmallItemByRight>
         </div>
     );
 }
