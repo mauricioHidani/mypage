@@ -4,11 +4,13 @@ export default function SmallItemByRight(
     { 
         mobMarginX,
         dekMarginX,
+        yMargin,
         children 
     }: 
     { 
         mobMarginX?: string,
         dekMarginX?: string,
+        yMargin?: string,
         children: ReactNode 
     }
 ) {
@@ -22,6 +24,7 @@ export default function SmallItemByRight(
                 text-white
                 ${mobMarginX ? "mx-"+mobMarginX : "mx-10"}
                 ${dekMarginX ? "md:mx-"+dekMarginX : "md:mx-28"}
+                ${yMargin ? "my-"+yMargin : ""}
             `}
         >
             { children }
