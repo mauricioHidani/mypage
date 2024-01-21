@@ -5,6 +5,8 @@ import ContentFull from "@/components/projectFull";
 import Image from "next/image";
 
 import { data as person } from "@/data/personData";
+import { data as projects } from "@/data/projectsData";
+import ProjectList from "@/components/projectList";
 
 export default function Home() {
     return (
@@ -19,7 +21,7 @@ export default function Home() {
                 >
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae totam praesentium cum, non unde illo ea enim numquam laborum et necessitatibus. Magnam minus placeat maiores, non dolorem cumque commodi impedit!
                 </ContentFull>
-                section
+                <ProjectList items={ projects } />
             </section>
         </main>
     )
